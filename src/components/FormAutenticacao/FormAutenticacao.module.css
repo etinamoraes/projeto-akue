@@ -1,0 +1,76 @@
+.container {
+    align-items: center;
+    background: var(--gray-800);
+    border-radius: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 1rem;
+    height: 60vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70rem;
+}
+
+.autenticacaoContainer {
+    align-items: center;
+}
+
+.cadastroContainer{
+    margin: 0 auto;
+}
+
+.formCadastro, .formAutenticacao{
+    display: flex;
+    flex-direction: column;
+}
+
+h2{
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+input{
+    background: transparent;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-size: 1rem;
+    height: 1.5rem;
+    line-height: 1.25rem;
+    padding: 0.25rem;
+}
+
+a {
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+
+@media (max-width:450px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        margin-top: 0;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .cadastroContainer{
+        margin-top: 1rem;
+    }
+
+    .formAutenticacao, .formCadastro{
+        align-items: center;
+    }
+
+    .inputSenha{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-left: 16%
+    }
+
+}

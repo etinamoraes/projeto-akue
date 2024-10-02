@@ -1,0 +1,42 @@
+.button {
+    align-items: center;
+    border-radius: 8px;
+    border: none;
+    color: var(--white);
+    cursor: pointer;
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    height: var(--altura-28);
+    padding: 0 var(--espacamentoEntreLinhas);
+    text-decoration: none;
+    width: var(--largura-360);
+}
+
+.button:hover {
+    opacity: 0.8;
+}
+
+.button-magenta {
+    background-color: var(--magenta500);
+}
+
+.button-purple {
+    background-color: var(--purple100);
+}
+
+.button-yellow {
+    background-color: var(--yellow100);
+}
+
+.button-red {
+    background-color: var(--red100);
+}
+
+.button-dark-red {
+    background-color: var(--red200);
+}
+
+
+
+

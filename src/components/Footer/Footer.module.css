@@ -1,0 +1,72 @@
+footer {
+    margin-top: auto;
+}
+
+.linkContent {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.links {
+    display: flex;
+    gap: 3px; 
+}
+
+.links a {
+    color: var(--white); 
+    cursor: pointer;
+    opacity: 0.8;
+    transition: color 0.3s ease; 
+}
+
+.links a:hover {
+    color: var(--purple300); 
+}
+
+.subscribe {
+    align-items: center;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    width: 100%;
+}
+
+.subscribe input {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid var(--red100);
+    border-radius: 4px;
+    margin-top: 8px; 
+    width: 12.5rem;
+}
+
+.subscribe h2 {
+    font-size: 1.2rem;
+}
+
+.subscribe button {
+    margin-top: 8px; 
+    width: 10%;
+}
+
+.paragraph {
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+.footerLine {
+    background-image: url('../../assets/rodape.png');
+    background-repeat: repeat-x;
+    background-size: contain;
+    height: 4rem;
+    width: 100%;
+}
+
+
+@media (max-width:450px) {
+    .subscribe{
+        display: none;
+    }
+}

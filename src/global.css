@@ -1,0 +1,46 @@
+:root {
+  --white: rgb(255, 255, 255);
+  --purple100: #7F6A9F;
+  --purple500: #28243b;
+  --red100: #D6544E;
+  --red200: #F24726;
+  --yellow100: #F7C030;
+  --magenta500: #EC2761;
+  --orange100: #E87D49;
+  --blue100: #38A1CE;
+  --green100: #6eb95e;
+  --espacamentoEntreLinhas: 1.5rem;
+  --largura-360: 25.7rem;
+  --altura-28: 2rem;
+  --gray-800: #202024;
+  --black: black; 
+
+}
+
+:focus {
+  outline: transparent;
+  box-shadow: 0 0 0 2px var(--purple100);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--purple500);
+  color: var(--white);
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+} 
+
+
+body, input, textarea, button {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1rem; 
+}
+
