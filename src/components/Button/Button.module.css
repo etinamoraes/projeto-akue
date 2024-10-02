@@ -37,6 +37,9 @@
     background-color: var(--red200);
 }
 
+.button-green {
+    background-color: var( --green100);
+}
 
 
 

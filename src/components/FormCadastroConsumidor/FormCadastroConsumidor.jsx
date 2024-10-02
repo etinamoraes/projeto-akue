@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './FormCadastroConsumidor.module.css'
 import { MapPin, Circle } from "@phosphor-icons/react";
+import { Button } from '../Button/Button';
 
 export function FormCadastroConsumidor() {
     return (
@@ -38,6 +39,7 @@ export function FormCadastroConsumidor() {
                         <label htmlFor="estado">Estado:</label>
                         <input className={styles.estado} type="text" id="estado" placeholder="Digite seu Estado" />
                     </div>
+                    <Button text="Cadastrar" color="button-magenta" />
                 </div>
         </div>
     );

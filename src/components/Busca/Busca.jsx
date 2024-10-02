@@ -3,6 +3,8 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import styles from './Busca.module.css'
+import { Button } from '../Button/Button';
+
 
 const professionals = [
   { id: 1, name: 'João - Professor', lat: -23.55052, lon: -46.633308 },
@@ -37,7 +39,7 @@ export function Busca() {
         />
 
         </div>
-        <button type="submit">Buscar</button> {/* usar botao componente */}
+        <Button text="Buscar" color="button-purple" />
 
       </form>
 

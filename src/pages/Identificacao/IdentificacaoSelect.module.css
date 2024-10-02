@@ -1,0 +1,23 @@
+.container {
+    align-items: center;
+    background-color: var(--purple500);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    justify-content: center;
+    margin-top: 20vh;
+}
+
+.boxButtons{
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    margin-bottom: 1rem;
+}
+
+Button{
+    margin-bottom: 1rem;
+}
+

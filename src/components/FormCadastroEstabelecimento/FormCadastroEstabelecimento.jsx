@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './FormCadastroEstabelecimento.module.css'
 import { MapPin, Circle } from "@phosphor-icons/react";
+import { Button } from '../Button/Button';
 
 export function FormCadastroEstabelecimento() {
     return (
@@ -50,6 +51,7 @@ export function FormCadastroEstabelecimento() {
                         <label htmlFor="">Horário de Funcionamento:</label>
                         <input className={styles.funcionamento} type="text" placeholder="indique o horário de funcionamento" />
                     </div>
+                    <Button text="Cadastrar" color="button-magenta" />
                 </div>
         </div>
     );

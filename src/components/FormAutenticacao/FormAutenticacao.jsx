@@ -1,13 +1,14 @@
 import React from 'react';
 import styles from "./FormAutenticacao.module.css"
+import { Button } from '../Button/Button';
 
 
 export function FormAutenticacao(){
     return (
         <div className={styles.container}>
             <div className={styles.cadastroContainer}>
-            <form action="" className={styles.formCadastro}>
                 <h2>Crie sua conta!</h2>
+            <form action="" className={styles.formCadastro}>
                 <div>
                     <label htmlFor="">Nome:</label>
                     <input type="text" name="" id="" placeholder="Digite seu nome" />
@@ -20,11 +21,12 @@ export function FormAutenticacao(){
                     <label htmlFor="">Senha:</label>
                     <input type="password" placeholder="Digite sua senha" />
                 </div>
+                <Button text="Cadastre-se" color="button-dark-red" /> 
             </form>
             </div>
             <div className={styles.autenticacaoContainer}>
-            <form action="" className={styles.formAutenticacao} >
                 <h2>Bem vinde de volta!</h2>
+            <form action="" className={styles.formAutenticacao} >
                 <div>
                     <label htmlFor="">E-mail:</label>
                     <input type="email" placeholder='Digite seu e-mail'/>
@@ -34,6 +36,7 @@ export function FormAutenticacao(){
                     <input type="password" placeholder='Digite sua senha'/> 
                     <a>Esqueci minha senha</a>
                 </div>
+                <Button text="Entrar" color="button-red" /> 
             </form>
             </div>
         </div>

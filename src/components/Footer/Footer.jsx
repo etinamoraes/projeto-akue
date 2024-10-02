@@ -1,6 +1,7 @@
 import React from 'react';
 import { FacebookLogo, XLogo, InstagramLogo, LinkedinLogo, GithubLogo  } from "@phosphor-icons/react";
 import styles from "./Footer.module.css"
+import { Button } from '../Button/Button'
 
 
 export function Footer (){
@@ -17,7 +18,7 @@ export function Footer (){
                 <div className={styles.subscribe}>
                     <h2>Inscreva-se para novidades</h2>
                     <input type="email" placeholder='Insira seu melhor e-mail'/>
-                    <button type='submit'>Enviar</button>
+                   <Button text='Enviar' color='button-magenta' />
                 </div>
             </div>
             <div className={styles.paragraph}>

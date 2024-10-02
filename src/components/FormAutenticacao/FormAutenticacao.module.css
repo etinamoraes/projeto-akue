@@ -10,15 +10,12 @@
     margin-bottom: 5vh;
     margin-left: auto;
     margin-right: auto;
-    max-width: 70rem;
+    max-width: 60rem;
 }
 
-.autenticacaoContainer {
-    align-items: center;
-}
-
-.cadastroContainer{
+.autenticacaoContainer, .cadastroContainer {
     margin: 0 auto;
+    width: 80%;
 }
 
 .formCadastro, .formAutenticacao{
@@ -26,9 +23,11 @@
     flex-direction: column;
 }
 
+
 h2{
     font-size: 2rem;
     margin-bottom: 0.5rem;
+    text-align: center;
 }
 
 input{
@@ -39,12 +38,18 @@ input{
     height: 1.5rem;
     line-height: 1.25rem;
     padding: 0.25rem;
+    width: 70%;
 }
 
 a {
     cursor: pointer;
     font-size: 0.9rem;
-    margin-top: 5px;
+}
+
+Button{
+    max-width: 60%;
+    align-self: center;
+    margin-top: 1rem;
 }
 
 
@@ -66,11 +71,19 @@ a {
         align-items: center;
     }
 
+    .autenticacaoContainer, .cadastroContainer {
+        width: 100%;
+    }
+
+    input{
+        width: 60%; 
+    }
+
     .inputSenha{
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        margin-left: 16%
+        width: 70%; 
     }
 
 }

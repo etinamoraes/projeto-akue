@@ -7,7 +7,9 @@ import { FormCadastroConsumidor } from './components/FormCadastroConsumidor/Form
 import { FormCadastroEstabelecimento } from './components/FormCadastroEstabelecimento/FormCadastroEstabelecimento.jsx'
 import { FormCadastroPrestador } from './components/FormCadastroPrestador/FormCadastroPrestador.jsx'
 import { Busca } from './components/Busca/Busca.jsx'
-import { Identificacao } from './components/Identificacao/Identificacao.jsx'
+
+import { FormAutenticacao } from './components/FormAutenticacao/FormAutenticacao.jsx'
+import { Identificacao } from './pages/Identificacao/Identificacao.jsx'
 
 
 const router = createBrowserRouter([
@@ -15,6 +17,10 @@ const router = createBrowserRouter([
       path: "/",
       element: <App />,
       children: [
+        {
+          path: "FormAutenticacao",
+          element: <FormAutenticacao />,
+        },
         {
           path: "Identificacao",
           element: <Identificacao />,
