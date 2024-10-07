@@ -18,27 +18,27 @@ const router = createBrowserRouter([
       element: <App />,
       children: [
         {
-          path: "FormAutenticacao",
+          path: "/FormAutenticacao",
           element: <FormAutenticacao />,
         },
         {
-          path: "Identificacao",
+          path: "/Identificacao",
           element: <Identificacao />,
         },
         {
-          path: "FormCadastroConsumidor",
+          path: "/FormCadastroConsumidor",
           element: <FormCadastroConsumidor />,
         },
         {
-          path: "FormCadastroEstabelecimento",
+          path: "/FormCadastroEstabelecimento",
           element: <FormCadastroEstabelecimento />,
         },
         {
-          path: "FormCadastroPrestador",
+          path: "/FormCadastroPrestador",
           element: <FormCadastroPrestador />,
         },
         {
-          path: "Busca",
+          path: "/Busca",
           element: <Busca />,
         },
       ]
@@ -48,5 +48,5 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <RouterProvider router={router} />
-  </React.StrictMode>,
+  </React.StrictMode>
 )

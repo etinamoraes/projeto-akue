@@ -1,13 +1,14 @@
 .container {
     align-items: center;
-    background: var(--gray-800);
+    background: rgba(0, 0, 0, 0.3);
+    border: 2px solid var(--black); 
     border-radius: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr; 
     gap: 1rem;
     height: 60vh;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
+    margin-top: auto;
+    margin-bottom: 1vh;
     margin-left: auto;
     margin-right: auto;
     max-width: 60rem;
@@ -59,8 +60,8 @@ Button{
         flex-direction: column;
         height: fit-content;
         margin-top: 0;
-        margin-left: 1rem;
-        margin-right: 1rem;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .cadastroContainer{

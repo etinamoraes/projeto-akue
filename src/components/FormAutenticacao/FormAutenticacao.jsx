@@ -1,9 +1,23 @@
 import React from 'react';
 import styles from "./FormAutenticacao.module.css"
 import { Button } from '../Button/Button';
+import { useNavigate } from 'react-router-dom';
+
 
 
 export function FormAutenticacao(){
+    
+        const navigate = useNavigate();
+    
+        const goToIdentificacao = () => {
+            navigate('/Identificacao');
+        } 
+
+        const goToBusca = () => {
+            navigate('/Busca');
+        }
+
+       
     return (
         <div className={styles.container}>
             <div className={styles.cadastroContainer}>
@@ -21,7 +35,7 @@ export function FormAutenticacao(){
                     <label htmlFor="">Senha:</label>
                     <input type="password" placeholder="Digite sua senha" />
                 </div>
-                <Button text="Cadastre-se" color="button-dark-red" /> 
+                <Button text="Cadastre-se" color="button-dark-red" onClick={goToIdentificacao}/> 
             </form>
             </div>
             <div className={styles.autenticacaoContainer}>
@@ -36,7 +50,7 @@ export function FormAutenticacao(){
                     <input type="password" placeholder='Digite sua senha'/> 
                     <a>Esqueci minha senha</a>
                 </div>
-                <Button text="Entrar" color="button-red" /> 
+                <Button text="Entrar" color="button-red" onClick={goToBusca} /> 
             </form>
             </div>
         </div>

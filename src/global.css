@@ -28,15 +28,21 @@
   box-sizing: border-box;
 }
 
+.App{
+  min-height: 100vh;
+  display: flex;
+
+}
+
 body {
   background-color: var(--purple500);
   color: var(--white);
   -webkit-font-smoothing: antialiased;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
 } 
+
+footer{
+  margin-top: auto;
+}
 
 
 body, input, textarea, button {

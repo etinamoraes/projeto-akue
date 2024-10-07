@@ -1,40 +1,41 @@
-.container {
+.container{
     align-items: center;
-    background: var(--gray-800);
+    background: rgba(0, 0, 0, 0.3);
+    border: 2px solid var(--black); 
     border-radius: 50px;
-    display: grid;
-    grid-template-columns: 1fr 1fr; 
-    gap: 1rem;
-    height: 60vh;
-    max-width: 70rem;
-    margin-top: 5vh;
-    margin-left: auto;
-    margin-right: auto;
+    height: auto;
+    max-width: 60rem;
+    margin-top: auto;
+    margin-bottom: 1vh;
+    margin-left: 1vh;
+    margin-right: 1vh;
 }
+
+/* CSS em comum */
 
 .dadosDireita, .dadosEsquerda {
     display: flex;
     flex-direction: column;
-
 }
 
 .dadosDireita, .dadosEsquerda label {
     font-size: 1.2rem;
 }
 
-.dadosDireita, .dadosEsquerda input {
-    font-size: 1rem;
-
+.dadosDireita{
+    width: 50%;
 }
 
 .dadosEsquerda{
-    width: 80%;
+    width: 50%;
 }
 
-.dadosEsquerda div{
-    width: 100%;
-}
+/* CSS Lado Direito */
 
+.dadosDireita{
+    align-items: center;
+    margin: auto 0 auto 0;
+}
 
 .pin {
     margin-left: 2rem;
@@ -46,39 +47,42 @@
     line-height: 1.25rem;
     margin-left: 1rem;
     width: 60%;
+    margin: 0;
 }
 
 .circlePin {
     background-color: white;
     border-radius: 50%;
     margin-bottom: 1rem;
-    align-self: center;
 }
 
 .inputName {
     background: transparent;
-    margin: 0 auto;
     border: none;
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-align: center;
     width: 80%;
-    height: 2.5rem;
+    height: 2rem;
     margin-bottom: 1rem;
 }
 
 .inputBoxCep {
     border-bottom: 2px solid var(--white);
     width: 60%;
-    align-self: center;
+}
 
+/* CSS Lado Esquerdo */
+
+.dadosEsquerda{
+    align-items: center;
+    width: 80%;
+    margin: 1rem 0 auto 0;
 }
 
 .dadosEsquerda input {
     background: transparent;
     line-height: 1.25rem;
-    margin-left: 2rem;
-    margin-top: 1rem;
-    width: 50%;
+    margin: 0.3rem 0 0.3rem 0
 }
 
 .inputBoxCelular {
@@ -116,9 +120,8 @@
 }
 
 
-
 @media (max-width:450px) {
-    .container {
+    .container{
         display: flex;
         flex-direction: column;
         height: fit-content;
@@ -127,45 +130,40 @@
         margin-right: 1rem;
     }
 
-    .dadosDireita div {
+    .dadosDireita {
         margin: 0 auto;
+        width: 100%;
     }
 
-    .cep {
-        line-height: 1rem;
+    .cep{
         padding: 0rem;
+        line-height: 1rem;
         margin-left: 1rem;
         width: 60%;
     }
 
-    .pin {
-        margin-bottom: 0;
-    }
-    
-    .inputName {
-        margin: 0 auto;
-        margin-top: 1rem;
+    .inputName{
         font-size: 2rem;
+        margin: 0 0 0.5rem 0;
     }
  
-    .circlePin {
-        margin: 0 auto;
-        margin-top: 1rem;
+    .circlePin{
+        margin: 0.5rem 0 0.5rem 0;
     }
 
-    .inputBoxCep {
+    .inputBoxCep{
         border: none
     }
 
-    .dadosEsquerda {
-        align-items: center;
+    .dadosEsquerda{
         width: 90%;
+        margin-top: 1rem;
+        align-self: center;
     }
 
-    .dadosEsquerda input {
+    .dadosEsquerda input{
         padding: 0rem;
         line-height: 1rem;
     }
 
 }
-

@@ -1,10 +1,7 @@
-.buscaContainer {
-    margin-top: 2rem;
-}
-
 form {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .buscaInputs {
@@ -21,10 +18,29 @@ input {
 }
 
 .mapaContainer {
-    height: 50vh;
-    margin-top: 3rem;
+    height: 50%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     width: 100%;
 }
+
+.resultados {
+    margin-top: 20px;
+  }
+  
+  .card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card h3 {
+    margin: 0;
+    font-size: 1.2em;
+  }
+  
 
 @media (max-width:450px) {
     form {

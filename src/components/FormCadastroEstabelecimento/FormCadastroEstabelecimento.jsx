@@ -6,6 +6,7 @@ import { Button } from '../Button/Button';
 export function FormCadastroEstabelecimento() {
     return (
         <div className={styles.container}>
+            <form action="">
                 <div className={styles.dadosDireita} >
                 <Circle size={150} className={styles.circlePin}/>
                 <input className={styles.inputName} type="text" placeholder="Estabelecimento"/>
@@ -53,6 +54,7 @@ export function FormCadastroEstabelecimento() {
                     </div>
                     <Button text="Cadastrar" color="button-magenta" />
                 </div>
+                </form>
         </div>
     );
 };

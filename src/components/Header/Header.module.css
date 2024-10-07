@@ -7,16 +7,22 @@
     display: flex;
     gap: 1rem;
     justify-content: center;
-    padding: 10px;
 }
 
 .container img {
     max-width: 100px;
-    height: auto;
 }
 
 .container p{
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: bold;
     margin: 0;
+}
+
+@media (max-width:450px) {
+    .container{
+        width: auto;
+        padding: 0.5rem;
+    }
+    
 }

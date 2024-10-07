@@ -1,11 +1,12 @@
 import React from 'react';
-import styles from './FormCadastroPrestador.module.css'
+import styles from './FormCadastroPrestador.module.css';
 import { MapPin, Circle } from "@phosphor-icons/react";
 import { Button } from '../Button/Button';
 
 export function FormCadastroPrestador() {
     return (
         <div className={styles.container}>
+            <form action="">
             <div className={styles.dadosDireita} >
                 <Circle size={150} className={styles.circlePin} />
                 <input className={styles.inputName} type="text" placeholder="Digite o seu nome" />
@@ -17,12 +18,12 @@ export function FormCadastroPrestador() {
             </div>
             <div className={styles.dadosEsquerda}>
                 <div className={styles.inputBoxCelular}>
-                    <label htmlFor="celular">Celular</label>
+                    <label htmlFor="celular">Celular:</label>
                     <input className={styles.celular} type="tel" id="celular" placeholder="(XX) XXXXX-XXXX" />
                 </div>
                 <div className={styles.inputBoxEmail}>
                     <label htmlFor="email">Email:</label>
-                    <input className={styles.email} type="email" id="email" placeholder="youremail@example.com" />
+                    <input className={styles.email} type="email" id="email" placeholder="seuemail@examplo.com" />
                 </div>
                 <div className={styles.inputBoxRua}>
                     <label htmlFor="rua">Rua:</label>
@@ -41,19 +42,20 @@ export function FormCadastroPrestador() {
                     <input className={styles.estado} type="text" id="estado" placeholder="Digite seu Estado" />
                 </div>
                 <div className={styles.inputBoxProfissao}>
-                    <label htmlFor="">Profissão/Serviço</label>
-                    <input className={styles.profissao} type="text" id="profissao" placeholder="Digite sua Profissão ou Serviço que você presta" />
+                    <label htmlFor="">Profissão/Serviço:</label>
+                    <input className={styles.profissao} type="text" id="profissao" placeholder="Digite sua Profissão/Serviço" />
                 </div>
                 <div className={styles.inputBoxExperiencia}>
-                    <label htmlFor="">Experiência</label>
-                    <input className={styles.experiencia} type="number" id="experiencia" placeholder="Digite quantos anos você tem de experiência" />
+                    <label htmlFor="">Experiência:</label>
+                    <input className={styles.experiencia} type="number" id="experiencia" placeholder="Tempo de experiência" />
                 </div>
                 <div className={styles.inputBoxPortfolio}>
-                    <label htmlFor="">Portfólio/Site</label>
+                    <label htmlFor="">Portfólio/Site:</label>
                     <input className={styles.portfolio} type="url" id="website" placeholder="https://www.seusite.com.br" />
                 </div>
                 <Button text="Cadastrar" color="button-magenta" />
             </div>
+            </form>
         </div>
     );
 };
