@@ -2,8 +2,18 @@ import React from 'react';
 import styles from './FormCadastroConsumidor.module.css'
 import { MapPin, Circle } from "@phosphor-icons/react";
 import { Button } from '../Button/Button';
+import { useNavigate } from 'react-router-dom';
+
+
 
 export function FormCadastroConsumidor() {
+
+    const navigate = useNavigate();
+
+    const goToBusca = () => {
+        navigate('/Busca');
+    }
+
     return (
         <div className={styles.container}>
             <form action="">
@@ -40,7 +50,7 @@ export function FormCadastroConsumidor() {
                         <label htmlFor="estado">Estado:</label>
                         <input className={styles.estado} type="text" id="estado" placeholder="Digite seu Estado" />
                     </div>
-                    <Button text="Cadastrar" color="button-magenta" />
+                    <Button text="Cadastrar" color="button-magenta" onClick={goToBusca}/>
                 </div>
                 </form>
         </div>

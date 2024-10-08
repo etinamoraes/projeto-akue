@@ -48,8 +48,8 @@ export function FormAutenticacao(){
                 <div className={styles.inputSenha} >
                     <label htmlFor="">Senha:</label>
                     <input type="password" placeholder='Digite sua senha'/> 
-                    <a>Esqueci minha senha</a>
                 </div>
+                    <a>Esqueci minha senha</a>
                 <Button text="Entrar" color="button-red" onClick={goToBusca} /> 
             </form>
             </div>

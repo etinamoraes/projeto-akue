@@ -2,8 +2,16 @@ import React from 'react';
 import styles from './FormCadastroEstabelecimento.module.css'
 import { MapPin, Circle } from "@phosphor-icons/react";
 import { Button } from '../Button/Button';
+import { useNavigate } from 'react-router-dom';
 
 export function FormCadastroEstabelecimento() {
+
+    const navigate = useNavigate();
+
+    const goToBusca = () => {
+        navigate('/Busca');
+    }
+
     return (
         <div className={styles.container}>
             <form action="">
@@ -52,7 +60,7 @@ export function FormCadastroEstabelecimento() {
                         <label htmlFor="">Horário de Funcionamento:</label>
                         <input className={styles.funcionamento} type="text" placeholder="indique o horário de funcionamento" />
                     </div>
-                    <Button text="Cadastrar" color="button-magenta" />
+                    <Button text="Cadastrar" color="button-magenta" onClick={goToBusca}/>
                 </div>
                 </form>
         </div>

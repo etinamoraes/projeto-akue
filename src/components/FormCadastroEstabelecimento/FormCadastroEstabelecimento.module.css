@@ -7,8 +7,8 @@
     max-width: 60rem;
     margin-top: auto;
     margin-bottom: 1vh;
-    margin-left: 1vh;
-    margin-right: 1vh;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* CSS em comum */
@@ -47,8 +47,8 @@
     border: none;
     line-height: 1.25rem;
     margin-left: 1rem;
-    width: 60%;
     margin: 0;
+    width: 60%;
 }
 
 .circlePin {
@@ -61,10 +61,10 @@
     background: transparent;
     border: none;
     font-size: 2rem;
-    text-align: center;
-    width: 80%;
     height: 2rem;
     margin-bottom: 1rem;
+    text-align: center;
+    width: 80%;
 }
 
 .inputBoxCep {
@@ -76,8 +76,8 @@
 
 .dadosEsquerda{
     align-items: center;
-    width: 80%;
     margin-top: 1rem;
+    width: 80%;
 }
 .dadosEsquerda input {
     background: transparent;
@@ -121,9 +121,9 @@
 }
 
 .inputBoxCnae{
+    display: flex;
     border-bottom: 2px solid var(--orange100);
     width: 80%;
-    display: flex;
 }
 
 .inputBoxhorario{
@@ -174,9 +174,9 @@
     }
 
     .dadosEsquerda{
+        align-self: center;
         width: 90%;
         margin-top: 1rem;
-        align-self: center;
     }
 
     .dadosEsquerda input{

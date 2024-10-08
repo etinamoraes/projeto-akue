@@ -2,8 +2,16 @@ import React from 'react';
 import styles from './FormCadastroPrestador.module.css';
 import { MapPin, Circle } from "@phosphor-icons/react";
 import { Button } from '../Button/Button';
+import { useNavigate } from 'react-router-dom';
 
 export function FormCadastroPrestador() {
+
+    const navigate = useNavigate();
+
+    const goToBusca = () => {
+        navigate('/Busca');
+    }   
+    
     return (
         <div className={styles.container}>
             <form action="">
@@ -53,7 +61,7 @@ export function FormCadastroPrestador() {
                     <label htmlFor="">Portfólio/Site:</label>
                     <input className={styles.portfolio} type="url" id="website" placeholder="https://www.seusite.com.br" />
                 </div>
-                <Button text="Cadastrar" color="button-magenta" />
+                <Button text="Cadastrar" color="button-magenta" onClick={goToBusca}/>
             </div>
             </form>
         </div>
