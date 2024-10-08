@@ -1,8 +1,21 @@
-# React + Vite
+# Projeto Akue
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto foi desenvolvido durante o curso de React da Reprograma, com o objetivo de promover a contratação de pessoas da comunidade LGBTQIAPN+. A plataforma permite que usuários que apoiam a causa se cadastrem e contratem diretamente profissionais ou estabelecimentos pertencentes à comunidade, contribuindo para a geração de oportunidades de trabalho e desenvolvimento profissional para esse grupo.
 
-Currently, two official plugins are available:
+# Tecnologias Usadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+  Pude revisar diversos conceitos importantes como:
+
+- React.Js + Vite
+  * Componentes;
+  * Props;
+  * Hooks como useState e useEffetc;
+  * Eventos;
+  * Consumo de Api;
+  * React-Router;
+
+- CSS
+  * Flexbox;
+  * Flexgrid;
+  * Responsidade Web;
+
