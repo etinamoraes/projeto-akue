@@ -1,12 +1,12 @@
 # Projeto Akue
 
-Projeto realizado no curso de React da Reprograma, cuja finalidade é a contratação de pessoas da comunidade LQBTQIAPN+. Através do projeto, pessoas usuárias que apoiam a causa, podem se cadastrar na plataforma e contratar diretamente profissionais ou estabelecimentos ligados a comunidade, garantindo assim a oportunidade de trabalho e desenvolvimento profissional desse grupo.
+Este projeto foi desenvolvido durante o curso de React da Reprograma, com o objetivo de promover a contratação de pessoas da comunidade LGBTQIAPN+. A plataforma permite que usuários que apoiam a causa se cadastrem e contratem diretamente profissionais ou estabelecimentos pertencentes à comunidade, contribuindo para a geração de oportunidades de trabalho e desenvolvimento profissional para esse grupo.
 
 # Tecnologias Usadas
 
-- React.Js + Vite
+  Pude revisar diversos conceitos importantes como:
 
-  Pude revisar diversos conceitos importantes ligados ao React.Js como:
+- React.Js + Vite
   * Componentes;
   * Props;
   * Hooks como useState e useEffetc;
@@ -17,4 +17,5 @@ Projeto realizado no curso de React da Reprograma, cuja finalidade é a contrata
 - CSS
   * Flexbox;
   * Flexgrid;
+  * Responsidade Web;
 
