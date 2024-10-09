@@ -124,6 +124,7 @@
     display: flex;
     border-bottom: 2px solid var(--orange100);
     width: 80%;
+    align-items: center;
 }
 
 .inputBoxhorario{

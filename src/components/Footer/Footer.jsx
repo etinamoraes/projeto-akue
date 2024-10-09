@@ -13,8 +13,8 @@ export function Footer() {
                         <a href="#"><FacebookLogo size={28} /></a>
                         <a href="#"><XLogo size={28} /></a>
                         <a href="#"><InstagramLogo size={28} /></a>
-                        <a href="#"><LinkedinLogo size={28} /></a>
-                        <a href="#"><GithubLogo size={28} /></a>
+                        <a href="https://www.linkedin.com/in/valentina-hastenreiter-moraes-a5191b331/"><LinkedinLogo size={28} /></a>
+                        <a href="https://github.com/etinamoraes"><GithubLogo size={28} /></a>
                     </div>
                     <div className={styles.subscribe}>
                         <h2>Inscreva-se para novidades</h2>

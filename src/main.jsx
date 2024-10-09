@@ -18,6 +18,10 @@ const router = createBrowserRouter([
       element: <App />,
       children: [
         {
+          index: true,
+          element: <FormAutenticacao />,
+        },
+        {
           path: "/FormAutenticacao",
           element: <FormAutenticacao />,
         },
