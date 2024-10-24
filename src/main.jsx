@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { createHashRouter, RouterProvider } from 'react-router-dom'
 import { FormCadastroConsumidor } from './components/FormCadastroConsumidor/FormCadastroConsumidor.jsx'
 import { FormCadastroEstabelecimento } from './components/FormCadastroEstabelecimento/FormCadastroEstabelecimento.jsx'
 import { FormCadastroPrestador } from './components/FormCadastroPrestador/FormCadastroPrestador.jsx'
@@ -12,7 +12,7 @@ import { FormAutenticacao } from './components/FormAutenticacao/FormAutenticacao
 import { Identificacao } from './pages/Identificacao/Identificacao.jsx'
 
 
-const router = createBrowserRouter([
+const router = createHashRouter([
     {
       path: "/",
       element: <App />,
