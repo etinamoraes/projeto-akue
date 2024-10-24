@@ -6,6 +6,9 @@ on:
 
 jobs:
   deploy:
+    permissions:
+      contents: write
+      
     name: Install, prepare and cache
     runs-on: ubuntu-latest
     steps:
